@@ -1673,7 +1673,9 @@
   },
   {
     "path": "pathing/食材与炼金/松茸/无草神@白白猫",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/taotao568685"
+    ]
   },
   {
     "path": "pathing/食材与炼金/松茸/有草神@未知作者",
@@ -1681,7 +1683,9 @@
   },
   {
     "path": "pathing/食材与炼金/松茸",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/taotao568685"
+    ]
   },
   {
     "path": "pathing/食材与炼金/枣椰/有草神@不瘦五十斤不改名",
@@ -1749,7 +1753,9 @@
   },
   {
     "path": "pathing/食材与炼金/泡泡桔/万叶版@白白喵",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/taotao568685"
+    ]
   },
   {
     "path": "pathing/食材与炼金/泡泡桔/泡泡桔@不瘦五十斤不改名",
@@ -1760,6 +1766,7 @@
   {
     "path": "pathing/食材与炼金/泡泡桔",
     "authorLinks": [
+      "https://github.com/taotao568685",
       "https://github.com/PanZic"
     ]
   },
@@ -1853,7 +1860,9 @@
   },
   {
     "path": "pathing/食材与炼金/甜甜花/甜甜花@白白喵",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/taotao568685"
+    ]
   },
   {
     "path": "pathing/食材与炼金/甜甜花/甜甜花全收集@ddaodan",
@@ -1865,6 +1874,7 @@
     "path": "pathing/食材与炼金/甜甜花",
     "authorLinks": [
       "https://github.com/PanZic",
+      "https://github.com/taotao568685",
       "https://github.com/ddaodan"
     ]
   },
@@ -2136,7 +2146,9 @@
   },
   {
     "path": "pathing/食材与炼金/鸟蛋/鸟蛋@白白喵",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/taotao568685"
+    ]
   },
   {
     "path": "pathing/食材与炼金/鸟蛋",
@@ -2145,7 +2157,8 @@
       "https://github.com/PanZic",
       "https://github.com/jidingcai",
       "https://github.com/MisakaAldrich",
-      "https://github.com/jiegedabaobei"
+      "https://github.com/jiegedabaobei",
+      "https://github.com/taotao568685"
     ]
   },
   {
@@ -2433,7 +2446,9 @@
   },
   {
     "path": "js/AutoSwitchRoles",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
   },
   {
     "path": "js/AutoTranscribePathing",
@@ -2544,7 +2559,10 @@
   },
   {
     "path": "js/HoeingPathingTest",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/Bedrockx",
+      "https://github.com/Tooltingsu"
+    ]
   },
   {
     "path": "js/HolyRelicsUp",
@@ -2823,10 +2841,6 @@
     ]
   },
   {
-    "path": "js/幻想真境剧诗抢大佬的满命角色",
-    "authorLinks": []
-  },
-  {
     "path": "js/恢复默认键位设置",
     "authorLinks": [
       "https://github.com/214-hanyan"
@@ -2896,7 +2910,9 @@
   },
   {
     "path": "js/背包材料统计",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/JJMdzh"
+    ]
   },
   {
     "path": "js/自动循环使用料理",
@@ -2955,11 +2971,15 @@
   },
   {
     "path": "js/食材加工",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/JJMdzh"
+    ]
   },
   {
     "path": "js/食材加工(模拟点击)",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/jidingcai"
+    ]
   },
   {
     "path": "js/首领讨伐一条龙",
@@ -3040,7 +3060,9 @@
   },
   {
     "path": "combat/1.茜芙爱万.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/Bedrockx"
+    ]
   },
   {
     "path": "combat/2.宵宫队[请看文件内说明].txt",
@@ -3068,7 +3090,9 @@
   },
   {
     "path": "combat/[好感度]芙宁娜芭芭拉.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/HZYgrandma"
+    ]
   },
   {
     "path": "combat/[效率低]二命优菈钟离挂机队.txt",
@@ -3096,7 +3120,9 @@
   },
   {
     "path": "combat/万妲八钟.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/baixi232310"
+    ]
   },
   {
     "path": "combat/万火希班.txt",
@@ -3112,11 +3138,15 @@
   },
   {
     "path": "combat/万能战斗策略（萌新推荐）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/万芙芭茜.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/HZYgrandma"
+    ]
   },
   {
     "path": "combat/万迪夜诺.txt",
@@ -3124,7 +3154,9 @@
   },
   {
     "path": "combat/万钟爱芙（精英）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/丝柯克冰队.txt",
@@ -3132,11 +3164,15 @@
   },
   {
     "path": "combat/丝芙爱雅(精英).txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/丝芙爱鹤-极致爆发-.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/丝茜芙爱.txt",
@@ -3184,7 +3220,9 @@
   },
   {
     "path": "combat/仆蓝罗班（融化）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/仆钟班希.txt",
@@ -3192,7 +3230,9 @@
   },
   {
     "path": "combat/伊芙万白.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/jidingcai"
+    ]
   },
   {
     "path": "combat/伊芙爱万-[高级版].txt",
@@ -3216,11 +3256,15 @@
   },
   {
     "path": "combat/凝光钟离五郎.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/千钟挂机.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/baixi232310"
+    ]
   },
   {
     "path": "combat/后台队[请看详情说明].txt",
@@ -3308,7 +3352,9 @@
   },
   {
     "path": "combat/火希欧莱.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/火希芙班.txt",
@@ -3324,11 +3370,15 @@
   },
   {
     "path": "combat/火芙希莱-精英.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/火芙爱莱(茜(小怪).txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/火芙爱莱(茜(精英).txt",
@@ -3336,7 +3386,9 @@
   },
   {
     "path": "combat/火芙茜(钟)万.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/火芙茜希-火神先手轻攻击版.txt",
@@ -3352,7 +3404,9 @@
   },
   {
     "path": "combat/火芙闲莱(下落火神).txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/爱可菲草行久.txt",
@@ -3360,7 +3414,9 @@
   },
   {
     "path": "combat/爱芙万茜[锄地精英].txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/HZYgrandma"
+    ]
   },
   {
     "path": "combat/爱芙丝-普攻流[请看文件内说明].txt",
@@ -3368,15 +3424,21 @@
   },
   {
     "path": "combat/爱芙芭茜[锄地小怪].txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/HZYgrandma"
+    ]
   },
   {
     "path": "combat/牛牛超载队（0命）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/牛牛超载队（2命）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/玛希班茜.txt",
@@ -3392,7 +3454,9 @@
   },
   {
     "path": "combat/瓦伊夏火(0命牛牛超载队).txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/瓦雷莎超载队.txt",
@@ -3404,11 +3468,15 @@
   },
   {
     "path": "combat/白万芙茜(浮空-无夜魂).txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/白万芙茜(浮空-无夜魂-增加高度).txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/白玛芙迪.txt",
@@ -3416,7 +3484,9 @@
   },
   {
     "path": "combat/白玛茜万[推荐].txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/evildoer12138"
+    ]
   },
   {
     "path": "combat/神鹤万心(无法冲刺打物理).txt",
@@ -3464,15 +3534,21 @@
   },
   {
     "path": "combat/艾梅莉埃（锄地专版）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/艾梅莉埃（锄地加长版）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/艾梅莉埃（锄地联机版）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/芙妲八芭.txt",
@@ -3480,15 +3556,21 @@
   },
   {
     "path": "combat/芙宁娜（锄地专版）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/芙宁娜（锄地加长版）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/芙宁娜（锄地联机版）.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "combat/芙芙菲菲(月感电).txt",
@@ -3496,7 +3578,9 @@
   },
   {
     "path": "combat/芙茜万芭.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/evildoer12138"
+    ]
   },
   {
     "path": "combat/茜芙枫心.txt",
@@ -3508,7 +3592,9 @@
   },
   {
     "path": "combat/茜（钟）芙万草.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/草行久钟(草神瞎转点不了种子).txt",
@@ -3564,7 +3650,9 @@
   },
   {
     "path": "combat/调香师燃烧-调香师，迪西娅，万叶，瑶瑶.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/Traveler07"
+    ]
   },
   {
     "path": "combat/那万钟八.txt",
@@ -3624,7 +3712,9 @@
   },
   {
     "path": "combat/钟芙万白【高压环境挂机】.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/vulgar-rustic"
+    ]
   },
   {
     "path": "combat/钟芙久瑶.txt",
@@ -3676,7 +3766,9 @@
   },
   {
     "path": "combat/龙芙万伊.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/RRRR623"
+    ]
   },
   {
     "path": "combat/龙芙希拉.txt",
@@ -3684,15 +3776,30 @@
   },
   {
     "path": "combat/龙芙爱茜.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/Kotagan"
+    ]
   },
   {
     "path": "combat",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/Bedrockx",
+      "https://github.com/HZYgrandma",
+      "https://github.com/baixi232310",
+      "https://github.com/RRRR623",
+      "https://github.com/jidingcai",
+      "https://github.com/johsang",
+      "https://github.com/evildoer12138",
+      "https://github.com/Traveler07",
+      "https://github.com/vulgar-rustic",
+      "https://github.com/Kotagan"
+    ]
   },
   {
     "path": "tcg/刻晴雷神甘雨.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/huiyadanli"
+    ]
   },
   {
     "path": "tcg/惊喜牌组/[惊喜牌组][枫丹]赫茉莎.txt",
@@ -3728,7 +3835,9 @@
   },
   {
     "path": "tcg/皇女白术林尼.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/HZYgrandma"
+    ]
   },
   {
     "path": "tcg/皇女科莱莫娜.txt",
@@ -3744,11 +3853,15 @@
   },
   {
     "path": "tcg/莫娜砂糖琴.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/huiyadanli"
+    ]
   },
   {
     "path": "tcg/迪希雅八重神子纯水精灵.txt",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/johsang"
+    ]
   },
   {
     "path": "tcg/迪希雅白术皇女.txt",
@@ -3920,6 +4033,10 @@
   },
   {
     "path": "tcg",
-    "authorLinks": []
+    "authorLinks": [
+      "https://github.com/huiyadanli",
+      "https://github.com/HZYgrandma",
+      "https://github.com/johsang"
+    ]
   }
 ]
