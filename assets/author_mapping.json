@@ -1438,21 +1438,105 @@
     ]
   },
   {
-    "path": "pathing/其他/成就/尘世巡游·第五辑_大世界探索收集/恰卡纳的悬枝",
+    "path": "pathing/其他/成就/尘世巡游/0 NPC前往",
     "authorLinks": [
-      "https://github.com/Flower-MUYi"
+      "https://github.com/Tooltingsu"
     ]
   },
   {
-    "path": "pathing/其他/成就/尘世巡游·第五辑_大世界探索收集/温泉诞生之日",
+    "path": "pathing/其他/成就/尘世巡游/A 第一辑/清泉之心",
     "authorLinks": [
-      "https://github.com/Flower-MUYi"
+      "https://github.com/Tooltingsu"
     ]
   },
   {
-    "path": "pathing/其他/成就/尘世巡游·第五辑_大世界探索收集",
+    "path": "pathing/其他/成就/尘世巡游/A 第一辑/神霄折戟录",
     "authorLinks": [
-      "https://github.com/Flower-MUYi"
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/A 第一辑/竹林月夜",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/A 第一辑",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/B 第二辑/少女薇拉的忧郁",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/B 第二辑/蒲公英海的狐狸",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/B 第二辑/野猪公主",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/B 第二辑",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/D 第四辑/怪盗与名侦探：虹彩胸针之谜",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/D 第四辑/枫丹动物寓言集",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/D 第四辑",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/E 第五辑/哈南帕查记事",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/E 第五辑/火山大王与缝影针",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/E 第五辑/玛阿威与幻写灵",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游/E 第五辑",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
+    ]
+  },
+  {
+    "path": "pathing/其他/成就/尘世巡游",
+    "authorLinks": [
+      "https://github.com/Tooltingsu"
     ]
   },
   {
@@ -1464,7 +1548,8 @@
   {
     "path": "pathing/其他/成就",
     "authorLinks": [
-      "https://github.com/Flower-MUYi"
+      "https://github.com/Flower-MUYi",
+      "https://github.com/Tooltingsu"
     ]
   },
   {
@@ -1484,6 +1569,7 @@
     "path": "pathing/其他",
     "authorLinks": [
       "https://github.com/Flower-MUYi",
+      "https://github.com/Tooltingsu",
       "https://github.com/evildoer12138",
       "https://github.com/MisakaAldrich",
       "https://github.com/Patrick-Ze"
