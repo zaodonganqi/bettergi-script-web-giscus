@@ -11,6 +11,73 @@ const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN,
 });
 
+// 获取或创建作者的专属讨论区
+async function getOrCreateAuthorDiscussion(username) {
+    try {
+        // 首先尝试查找现有的作者讨论区
+        const searchQuery = `
+            query SearchDiscussions($query: String!) {
+                search(query: $query, type: DISCUSSION, first: 10) {
+                    nodes {
+                        ... on Discussion {
+                            id
+                            title
+                            number
+                        }
+                    }
+                }
+            }
+        `;
+
+        const searchResponse = await octokit.graphql(searchQuery, {
+            query: `repo:babalae/bettergi-script-web-giscus in:title "作者通知: ${username}"`
+        });
+
+        // 如果找到现有的讨论区，返回其ID
+        if (searchResponse.search.nodes.length > 0) {
+            const existingDiscussion = searchResponse.search.nodes[0];
+            console.log(`找到作者 ${username} 的现有讨论区: #${existingDiscussion.number}`);
+            return existingDiscussion.id;
+        }
+
+        // 如果没有找到，创建新的讨论区
+        console.log(`为作者 ${username} 创建新的专属讨论区...`);
+        
+        const createMutation = `
+            mutation CreateDiscussion($input: CreateDiscussionInput!) {
+                createDiscussion(input: $input) {
+                    discussion {
+                        id
+                        number
+                        url
+                    }
+                }
+            }
+        `;
+
+        const createResponse = await octokit.graphql(createMutation, {
+            input: {
+                repositoryId: "R_kgDOPbW19A", // 仓库的 node_id
+                categoryId: "DIC_kwDOPbW19M4Ct_3t", // 讨论分类的 node_id
+                title: `作者通知: ${username}`,
+                body: `这是作者 @${username} 的专属通知讨论区。\n\n当有用户对该作者的脚本进行评论时，系统会在此讨论区发送通知。\n\n---\n\n*此讨论区由系统自动创建*`
+            }
+        });
+
+        const newDiscussion = createResponse.createDiscussion.discussion;
+        console.log(`为作者 ${username} 创建讨论区成功: #${newDiscussion.number} - ${newDiscussion.url}`);
+        
+        return newDiscussion.id;
+        
+    } catch (error) {
+        console.log(`获取或创建作者 ${username} 的讨论区失败:`, error.message);
+        if (error.errors) {
+            console.log('GraphQL错误:', error.errors);
+        }
+        return null;
+    }
+}
+
 async function notifyAuthors() {
     const { GITHUB_EVENT_PATH } = process.env;
     const event = JSON.parse(fs.readFileSync(GITHUB_EVENT_PATH, 'utf8'));
@@ -68,70 +135,53 @@ async function notifyAuthors() {
         return;
     }
 
-    // 构建 @mention 字符串
-    const mentions = scriptInfo.authorLinks.map(link => {
-        const username = link.split('/').pop();
-        return `@${username}`;
-    }).join(' ');
-
-    // 构建通知评论
-    const notificationComment = `🔔 **脚本评论通知**\n\n${mentions}\n\n📁 **脚本路径：** \n\`${scriptPath}\`\n\n💬 **评论内容：**\n${comment.body}\n\n🔗 **评论区链接：** [#${discussion.number}](${discussion.html_url})`;
-
-    // 发送通知
-    try {
-        console.log('准备发送通知到讨论区 #21');
-        console.log('通知内容:', notificationComment);
+    // 为每个作者单独发送通知
+    for (const authorLink of scriptInfo.authorLinks) {
+        const username = authorLink.split('/').pop();
+        console.log(`正在为作者 ${username} 发送通知...`);
         
-        // 使用 GraphQL API 创建讨论评论
-        const mutation = `
-            mutation AddDiscussionComment($input: AddDiscussionCommentInput!) {
-                addDiscussionComment(input: $input) {
-                    comment {
-                        id
-                        url
+        try {
+            // 获取或创建作者的专属讨论区
+            const authorDiscussionId = await getOrCreateAuthorDiscussion(username);
+            
+            if (!authorDiscussionId) {
+                console.log(`无法为作者 ${username} 创建或获取讨论区`);
+                continue;
+            }
+            
+            // 构建单个作者的通知评论
+            const notificationComment = `🔔 **脚本评论通知**\n\n@${username}\n\n📁 **脚本路径：** \n\`${scriptPath}\`\n\n💬 **评论内容：**\n${comment.body}\n\n👤 **评论者：** @${comment.user.login}\n\n🔗 **评论区链接：** [#${discussion.number}](${discussion.html_url})`;
+            
+            // 发送通知到作者的专属讨论区
+            const mutation = `
+                mutation AddDiscussionComment($input: AddDiscussionCommentInput!) {
+                    addDiscussionComment(input: $input) {
+                        comment {
+                            id
+                            url
+                        }
                     }
                 }
+            `;
+
+            const variables = {
+                input: {
+                    discussionId: authorDiscussionId,
+                    body: notificationComment,
+                },
+            };
+
+            const response = await octokit.graphql(mutation, variables);
+            console.log(`作者 ${username} 的通知发送成功:`, response.addDiscussionComment.comment.url);
+            
+            // 添加延迟，避免API限制
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+        } catch (error) {
+            console.log(`为作者 ${username} 发送通知失败:`, error.message);
+            if (error.errors) {
+                console.log('GraphQL错误:', error.errors);
             }
-        `;
-
-        // 获取讨论区 #2 的 node_id
-        const discussionQuery = `
-            query GetDiscussion($owner: String!, $repo: String!, $number: Int!) {
-                repository(owner: $owner, name: $repo) {
-                    discussion(number: $number) {
-                        id
-                    }
-                }
-            }
-        `;
-
-        const discussionResponse = await octokit.graphql(discussionQuery, {
-            owner: 'babalae',
-            repo: 'bettergi-script-web-giscus',
-            number: 21
-        });
-
-        if (!discussionResponse.repository?.discussion?.id) {
-            throw new Error('未找到讨论区 #21');
-        }
-
-        const discussionId = discussionResponse.repository.discussion.id;
-        console.log('讨论区 #21 的 ID:', discussionId);
-
-        const variables = {
-            input: {
-                discussionId: discussionId,
-                body: notificationComment,
-            },
-        };
-
-        const response = await octokit.graphql(mutation, variables);
-        console.log('评论创建成功:', response.addDiscussionComment.comment.url);
-        console.log(`已通知作者: ${scriptInfo.authorLinks.join(', ')}`);
-    } catch (error) {
-        console.log('发送通知失败:', error.message);
-        if (error.errors) {
-            console.log('GraphQL错误:', error.errors);
         }
     }
 }
